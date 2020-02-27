@@ -31,7 +31,7 @@ router.post('/login', (req, res) => {
                         message: 'Logged successfuly',
                     });
                 } else {
-                    res.status(404).json({
+                    res.status(403).json({
                         error: true,
                         status: 'Error',
                         message: 'Authentication error',
